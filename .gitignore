@@ -1,0 +1,55 @@
+# ======================== CMake 编译产物 核心忽略 (重中之重) ========================
+# cmake 生成的核心缓存文件
+CMakeCache.txt
+# cmake 生成的编译构建目录
+CMakeFiles/
+# cmake 生成的编译规则文件
+# Makefile
+cmake_install.cmake
+install_manifest.txt
+# cmake 编译出的 静态库/动态库 文件 (你的libmyMuduo.so 会被忽略)
+lib/
+*.a
+*.so
+*.lib
+*.dll
+# cmake 编译出的 可执行程序/目标文件
+*.o
+*.out
+*.exe
+
+# ======================== 项目目录忽略 ========================
+# 如果你用了build目录编译(推荐)，直接忽略整个build文件夹
+build/
+build-*/
+# example/
+test/
+
+# ======================== C/C++ 编译通用忽略 ========================
+# 预处理文件
+*.ii
+*.i
+*.s
+# 编译中间文件
+*.lo
+*.la
+# 依赖文件
+*.d
+
+# ======================== 系统/IDE 无关文件 忽略 ========================
+# Linux系统临时文件
+*~
+.#*
+*.swp
+*.swo
+# macOS系统垃圾文件
+.DS_Store
+# Windows系统垃圾文件
+Thumbs.db
+*.bak
+*.tmp
+# IDE编辑器缓存(如果用vscode/clion)
+.vscode/
+.idea/
+.clangd/
+compile_commands.json
